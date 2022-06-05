@@ -1,3 +1,7 @@
+:root {
+    --main-color: #FF800B;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +20,7 @@ body {
     margin-top: 2vh;
 } 
 .developer {
-    color: #FF800B;
+    color: var(--main-color);
     font-size: 1.5em;
     font-weight: bold;
     text-align: center;
@@ -60,7 +64,7 @@ ul {
     margin-top: 2vh;
 }
 .githubrepo {
-    color: #FF800B;
+    color: var(--main-color);
     font-size: 1.5em;
     font-weight: bold;
     margin-top: 2vh;
@@ -89,6 +93,6 @@ ul {
 }
 
 ::selection {
-    background: #FF800B;
+    background: var(--main-color);
     color: white;
 }

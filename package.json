@@ -1,0 +1,23 @@
+{
+  "name": "electronjs-reddit-bot",
+  "version": "1.0.0",
+  "description": "This is the official application of the Reddit Bot developed using Electron.js.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ImmaHarry/electronjs-rvb.git"
+  },
+  "author": "harrydadev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ImmaHarry/electronjs-rvb/issues"
+  },
+  "homepage": "https://github.com/ImmaHarry/electronjs-rvb#readme",
+  "dependencies": {
+    "electron": "^19.0.3",
+    "snoowrap": "^1.23.0"
+  }
+}

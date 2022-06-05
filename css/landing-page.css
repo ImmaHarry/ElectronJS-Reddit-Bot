@@ -1,0 +1,109 @@
+html {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(20, 20, 20, 1);
+}
+
+header {
+    color: #FF9B3E;
+    font-size: 1.25em;
+    font-family: Alatsi;
+    text-align: center;
+    padding: 1em;
+}
+
+.container {
+    font-size: 2em;
+    vertical-align: center;
+    margin-top: 25vh;
+}
+
+.tagline {
+    color: white;
+    font-family: Antonio;
+    text-align: center;
+    padding: 0.5em;
+}
+
+hr {
+    height: 4px;
+    background-color: #FF9B3E;
+    border: 0;
+    width: 35%;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+.startButton {
+    background: rgba(255, 255, 255, 0);
+    border: solid 2px #FF9B3E;
+    color: #FF9B3E;
+    font-size: 0.75em;
+    padding: 0.25em 0.5em 0.25em 0.5em;
+    border-radius: 10px;
+    font-family: Alatsi;
+    display: block;
+    margin: 0 auto;
+    margin-top: 0.75em;
+}
+
+.startButton i {
+    margin-right: 10px;
+}
+
+footer {
+    font-size: 1.25em;
+    font-family: Alatsi;
+    text-align: center;
+    padding: 0.5em;
+    /*Aligning to bottom right corner of screen*/
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+
+.startButton:hover {
+    cursor: pointer;
+}
+
+footer a {
+    color: #FF9B3E;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #FF9B3E;
+    text-decoration: underline;
+}
+
+
+.img1 {
+    /*Aligning picture to top-corner right*/
+    position: fixed;
+    top: 0;
+    right: 0;
+    /*Setting size of image*/
+    /*Setting image to cover the whole screen*/
+    z-index: -1;
+}
+
+.img2 {
+    /*Aligning picture to bottom-corner left*/
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+::selection {
+    background-color: #FF9B3E;
+    color: white;
+}

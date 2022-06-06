@@ -9,7 +9,7 @@ const createWindow = () => {
             preload: path.join(__dirname, 'scripts/preload.js'),
             nodeIntegration: true
         },
-        icon: path.join(__dirname, 'app-icon.png')
+        icon: path.join(__dirname, 'site-assets/app-icon.ico')
     })
     
     win.loadFile('Webpage Files/landing-page.html')

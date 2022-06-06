@@ -6,13 +6,14 @@ const createWindow = () => {
         height: 1920,
         width: 1080,
         webPreferences: {
-            preload: path.join(__dirname, 'scripts/preload.js'),
             nodeIntegration: true
         },
-        icon: path.join(__dirname, 'site-assets/app-icon.ico')
+        icon: path.join(__dirname, 'site-assets/app-icon.ico'),
+        frame: false,
+        titleBarStyle: 'hiddeninset'
     })
     
-    win.loadFile('Webpage Files/landing-page.html')
+    win.loadFile('Webpage Files/index.html')
 }
 
 app.whenReady().then(() => {
@@ -26,3 +27,5 @@ app.whenReady().then(() => {
 app.on('window-all-closed', () => {
     if (process.platform !== 'darwin') app.quit()
 })
+
+app.on('window-all-closed', () => app.quit());

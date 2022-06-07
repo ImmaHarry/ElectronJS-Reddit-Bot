@@ -16,7 +16,7 @@ body {
     background-color: rgba(20, 20, 20, 1);
 }
 
-header {
+.header2 {
     color: var(--main-color);
     font-size: 1.25em;
     font-family: Alatsi;

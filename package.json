@@ -18,6 +18,7 @@
   "homepage": "https://github.com/ImmaHarry/electronjs-rvb#readme",
   "dependencies": {
     "electron": "^19.0.3",
+    "electron-reloader": "^1.2.3",
     "snoowrap": "^1.23.0",
     "swup": "^2.0.14"
   }

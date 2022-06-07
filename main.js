@@ -1,32 +1,19 @@
-const { app, BrowserWindow } = require('electron');
-const path = require('path');
-
-// Create the browser window.
+const { app, BrowserWindow, screen } = require('electron');
 const createWindow = () => {
-    const win = new BrowserWindow({
-        height: 1920,
-        width: 1080,
-        webPreferences: {
-            nodeIntegration: true
-        },
-        icon: path.join(__dirname, 'site-assets/app-icon.ico'),
+    const { width, height } = screen.getPrimaryDisplay().workAreaSize;
+
+    const window = new BrowserWindow({
+        width: width / 1.25,
+        height: height / 1.25,
         frame: false,
-        titleBarStyle: 'hiddeninset'
-    })
-    
-    win.loadFile('Webpage Files/index.html')
-}
+        webPreferences: {
+            nodeIntegration: true,
+            enableRemoteModule: true
+        }
+    });
 
-app.whenReady().then(() => {
-    createWindow()
+    window.loadFile('public/index.html');
+};
 
-    app.on('activate', () => {
-        if (BrowserWindow.getAllWindows().length === 0) createWindow()
-    })
-})
-
-app.on('window-all-closed', () => {
-    if (process.platform !== 'darwin') app.quit()
-})
-
+app.whenReady().then(createWindow)
 app.on('window-all-closed', () => app.quit());

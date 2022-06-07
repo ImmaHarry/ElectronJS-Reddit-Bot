@@ -1,50 +1,50 @@
-.titlebar {
-    background-color: black;
+#titlebar {
     color: white;
-    font-size: 0.6em;
+    background-color: rgba(88, 88, 88, 0.8);
     font-family: Alatsi;
-    font-weight: lighter;
-    user-select: none;
-    z-index: 1;
-    -webkit-app-region: drag;
     border-bottom: white 2px solid;
+    -webkit-app-region: drag;
+    font-size: 1.15em;
+    user-select: none; /* Standard */
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 .titlebar-content {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-}   
+    padding: 0px 10px;
+}
 
-.titlebar-content-center {
-    display: flex;
-    justify-content: center;
-    margin-top: 0.75em;
+.button {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    cursor: pointer;
     -webkit-app-region: no-drag;
 }
 
-.titlebar-content a {
+.button.close { background: #F03823; }
+.button.minimize { background: #FCA101; margin: 0 3px; }
+.button.maximize { background: #66E017; margin-right: 16px;}
+
+.close:hover { background: #CC2411;cursor: pointer;}
+.minimize:hover { background: #D48802;cursor: pointer;} 
+.maximize:hover { background: #4EBD06;cursor: pointer;}
+
+.titlebar-content-left {
+    -webkit-app-region: no-drag;
+}
+
+.help-icon:first-child {
     color: white;
     text-decoration: none;
-    font-size: 3em;
-    margin-left: 0.5em;
-    user-select: none;
-    -webkit-app-region: no-drag;
+    font-size: 1.1em;
+    margin-right: 5px;
 }
-
-.titlebar-content a:hover {
-    color: #FF9B3E;
-}
-
-.titlebar-content button {
-    background-color: rgba(255, 255, 255, 0);
-    border: none;
-    margin-right: 0.5em;
-    font-size: 1.5em;
-    user-select: none;
-    margin-top: 0.75em;
-    -webkit-app-region: no-drag;
-}
-
-.titlebar button:hover {
-    cursor: pointer;
+.help-icon:hover {
+    color: #FCA101;
 }

@@ -11,28 +11,28 @@
     <script defer src="../node_modules/swup/dist/swup.min.js"></script>
 </head>
 <body>
-    <div class="titlebar">
+    <header id="titlebar">
         <div class="titlebar-content">
             <div class="titlebar-content-left">
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-solid fa-note-sticky"></i></a>
-                    <a href="#"><i class="fa-solid fa-handshake"></i></a>
-                    <a href="#"><i class="fa-solid fa-question"></i></a>      
+                    <a class="test" href="#"><i class="fa-brands fa-github help-icon"></i></a>
+                    <a href="#"><i class="fa-solid fa-note-sticky help-icon"></i></a>
+                    <a href="#"><i class="fa-solid fa-handshake help-icon"></i></a>
+                    <a href="#"><i class="fa-solid fa-question help-icon"></i></a>      
             </div>
             <div class="titlebar-content-center">
-                <h1>Automated Reddit Video Maker (ARVM)</h1>
+                <p>Automated Reddit Video Maker</p>
             </div>
-            <div class="titlebar-content-right">
-                <button class="minimize"><img src="../site-assets/minimize.svg"></button>
-                <button class="maximize"><img src="../site-assets/maximize.svg"></button>
-                <button class="close"><img src="../site-assets/close.svg"></button>
+            <div class="controls titlebar-content-right">
+                <span class="button close"></span>
+                <span class="button minimize"></span>
+                <span class="button maximize"></span>
             </div>
         </div>
-    </div>
+    </header>
     <div class="ContainerDiv">
-        <header>
+        <div class="header2">
             <h1>Reddit Video Maker</h1>    
-        </header>
+        </div>
         <body>
             <div class="container">
                 <div class="tagline">Ever seen those Reddit videos on TikTok & YouTube shorts?<br>Let's make one for you in no time.</div>
@@ -42,6 +42,7 @@
 
             <img class="img1" src="../site-assets/landing-1.png" alt="">
             <img class="img2" src="../site-assets/landing-2.png" alt="">
+            <script src="../controls.js" defer=""></script>
         </body>
         <footer>
             <div>
